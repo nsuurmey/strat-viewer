@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formation Outcrop Viewer</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="search-bar">
+    <input type="text" id="query" placeholder="Formation name, e.g. Morrison Formation" autocomplete="off">
+    <select id="state-select">
+      <option value="">All states</option>
+    </select>
+    <button id="search-btn">Search</button>
+  </div>
+  <div id="match-panel"></div>
+  <div id="map"></div>
+  <div id="error-banner"></div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
